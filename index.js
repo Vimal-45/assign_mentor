@@ -10,6 +10,9 @@ app.use(cors());
 app.use(express.json());
 
 //api routers
+app.get('/', (req, res) => {
+    res.send('Welcome to the Hall Booking API');
+  });  
 
 app.use('/api/hall',router)
 
